@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0; }
+body{background-image: url("../IMG/Fondo.jpg"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; text-align: center; color: white; font-family:"Helvetica"; cursor: url("../IMG/cursor.png") 10 10, auto;}
+
+.wrapper {background-color: rgba(255,255,255,0.50); width: 1000px; margin-left: auto; margin-right: auto; padding: 30px; box-sizing: border-box;}
+
+.nav{background-color:#FFFFFF;  height: 200px; color:#FA9C1D; width: 1000px; margin-left: auto; margin-right: auto; font-weight: 800}
+
+.footer {font-size: 12px; background-color: #4A4C4E ;color: #FFFFFF; height: 50px; line-height: 50px; width: 1000px; margin-left: auto; margin-right: auto}
+
+ul {list-style-type: none; }
+
+li {width: 196px; float: left; border-left: 3px solid #FA9C1D; line-height: 30px;  }
+
+#izquierdo {border-left: none; }
+
+.section {background-color:#FA9C1D; width: 700px; padding: 70px; margin-left: auto; margin-right: auto; margin-top: 75px; margin-bottom: 75px; }
+
+/* COLORES DEL SITIO WEB #FA9C1D #4A4C4E #FFFFFF */
+
+* {cursor: url("../IMG/cursor.png", auto);}
+
+.section img {}
+
+.section p {text-align: justify;}
+
+@font-face {src: url("../SRC/big_noodle_titling.ttf"); font-family: "Overwatch"}
+
+h2 {font-family: "Overwatch"; font-size: 50px; letter-spacing: 1px;}
+
+a {text-decoration: none ; color: #FA9C1D ; }
+
+a:hover {font-size: 20px; }
+
+/* Posiciones para botones= Fija:No mantiene el flujo de la pagina, se basa en la ventana del navegador. Se queda posicionado donde le indicamos sin moverse con scroll. Absoluta: Tambien sale de la ventana pero es responsiva al scroll Relativa: Sigue el flujo de la pagina. */
+
+.home {position: fixed;right: 60px; top: 300px;}
+
+#TracerIMG { position: absolute; right: 1050px; top: 450px;}
+#TracerIMG:hover {transform: translateX(825px); transition: linear 2s; }
+
+#GenjiIMG {  position: absolute; right: 175px; top: 900px;}
+#GenjiIMG:hover {transform: rotate(360deg); transition: ease-in 3s}
+
+#WidowIMG {  position: absolute; right: 1050px; top: 1200px;}
+#WidowIMG:hover {transform:skewX(60deg) scale(0.10); transition: ease-out 10s;}
+
+#LucioIMG {  position: absolute; right: 175px; top: 1750px;}
+#LucioIMG:hover {transform: translate(50px, 100px);}
+
+#ReaperIMG { position: absolute; right: 1050px; top: 2200px; transition: opacity 2s ease;}
+#ReaperIMG:hover {opacity: 0.5;}
